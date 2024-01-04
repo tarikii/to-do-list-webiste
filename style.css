@@ -1,0 +1,145 @@
+#page {
+    background-color: #702963;
+    height: 100vh;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    text-align: center;
+    color: #ffffff;
+    font-style: italic;
+    padding-top: 50px;
+}
+
+.todo-list {
+    max-width: 600px;
+    background-color: white;
+    padding: 20px 30px 50px;
+    margin: 120px auto 15px;
+    border-radius: 15px;
+}
+
+.list-header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.list-header input[type="text"] {
+    width: 70%;
+    padding: 20px;
+    border-style: solid;
+    border-color: green;
+    border-radius: 20px;
+}
+
+.add-task-btn {
+    background-color: #cf1cba;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 35px;
+}
+
+.add-task-btn:hover {
+    cursor: pointer;
+    background-color: #3f2954;
+  }
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 10px;
+    border-bottom: 1px solid gray;
+}
+
+.options span {
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #0000ff;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 35px;
+}
+
+.delete-btn:hover {
+    cursor: pointer;
+    background-color: #1414b8;
+  }
+
+ul li {
+    list-style: none;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 12px 8px 5px 50px;
+    margin-bottom: 20px;
+    max-height: 40px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+li p {
+    color: blue;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+}
+
+
+li p.checked {
+    text-decoration: line-through;
+}
+
+.checked::before {
+    background-image: url(images/checked.jpg);
+}
+
+
+ul li span {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+}
+
+.active {
+    color: #1919e6;
+}
